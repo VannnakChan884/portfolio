@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sawarabi+Mincho&display=swap');
+
+/* Smooth transitions */
+body {
+    font-family: 'Nunito Sans', 'Kantumruy Pro', 'Sawarabi Mincho', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero-pattern {
+    background-color: #f8fafc;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e2e8f0' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3182CE;
+    border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #2D3748;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #2C5282;
+}
+
+/* Animation for hero section */
+.hero {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-primary {
+    color: #3182CE;
+}
+
+.text-secondary {
+    color: #FFFFFF;
+}
+
+.bg-primary {
+    background-color: #3182CE;
+}
+
+.bg-secondary {
+    background-color: #FFFFFF;
+}
+
+.border-primary {
+    color: #3182CE;
+}
+
+.border-secondary {
+    color: #FFFFFF;
+}
+
+.text-accent {
+    color: #3182CE;
+}
+
+.bg-accent {
+    background-color: #3182CE;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
