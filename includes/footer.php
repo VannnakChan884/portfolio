@@ -1,3 +1,4 @@
+
 <footer class="bg-secondary dark:bg-gray-800 text-primary dark:text-secondary py-8 border-t-2 border-primary dark:border-gray-400">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
