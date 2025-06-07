@@ -221,15 +221,22 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
         <section id="contact" class="py-16 bg-gray-50">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-primary dark:text-gray-800 text-center mb-12"><?= $translations['contact_title'] ?></h2>
-                <div class="max-w-2xl mx-auto bg-secondary dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                <div class="bg-secondary dark:bg-gray-800 p-8 rounded-lg shadow-md">
                     <form @submit.prevent="submitForm" class="text-primary dark:text-secondary space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium mb-1"><?= $translations['name'] ?></label>
-                            <input v-model="contact.name" type="text" required class="w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
-                        </div>
-                        <div class="mb-6">
-                            <label for="email" class="block text-sm font-medium mb-1"><?= $translations['email'] ?></label>
-                            <input v-model="contact.email" type="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                            <div class="sm:col-span-3">
+                                <label for="name" class="block text-sm font-medium mb-1"><?= $translations['name'] ?></label>
+                                <div class="mt-2">
+                                    <input v-model="contact.name" type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-3">
+                                <label for="email" class="block text-sm font-medium mb-1"><?= $translations['email'] ?></label>
+                                <div class="mt-2">
+                                    <input v-model="contact.email" type="email" name="email" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent">
+                                </div>
+                            </div>
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block text-sm font-medium mb-1"><?= $translations['message'] ?></label>
