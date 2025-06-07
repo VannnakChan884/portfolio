@@ -153,8 +153,40 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
                         </div>
                         <div class="space-y-3">
                             <div class="flex items-center">
-                                <div class="w-2 h-2 bg-accent dark:bg-secondary rounded-full mr-3"></div>
-                                <span><?= explode(':', $translations['design_skills'])[1] ?></span>
+                                <ul class="ml-6">
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-solid fa-pen-nib text-sm"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['design_skills'])[1] ?></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-solid fa-vector-square"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['design_skills'])[2] ?></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-brands fa-figma"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['design_skills'])[3] ?></span>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-brands fa-sketch"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['design_skills'])[4] ?></span>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -169,8 +201,40 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
                         </div>
                         <div class="space-y-3">
                             <div class="flex items-center">
-                                <div class="w-2 h-2 bg-accent dark:bg-secondary rounded-full mr-3"></div>
-                                <span><?= explode(':', $translations['it_skills'])[1] ?></span>
+                                <ul class="ml-6">
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-solid fa-camera"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['it_skills'])[1] ?></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-solid fa-print"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['it_skills'])[2] ?></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['it_skills'])[3] ?></span>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-solid fa-users-gear"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['it_skills'])[4] ?></span>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -185,8 +249,51 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
                         </div>
                         <div class="space-y-3">
                             <div class="flex items-center">
-                                <div class="w-2 h-2 bg-accent dark:bg-secondary rounded-full mr-3"></div>
-                                <span><?= explode(':', $translations['code_skills'])[1] ?></span>
+                                <ul class="ml-6">
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-brands fa-html5"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['code_skills'])[1] ?></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-brands fa-css3-alt"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['code_skills'])[2] ?></span>
+                                            <span> / <?= explode(':', $translations['code_skills'])[3] ?></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-brands fa-js"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['code_skills'])[4] ?></span>
+                                            <span> / <i class="fa-brands fa-vuejs w-6 h-6"></i><?= explode(':', $translations['code_skills'])[5] ?></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-brands fa-php"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['code_skills'])[6] ?></span>
+                                            <span> / <i class="fa-brands fa-laravel w-6 h-6"></i><?= explode(':', $translations['code_skills'])[7] ?></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                            <div class="w-6 h-6 flex items-center justify-center p-3 rounded-full mr-2">
+                                                <i class="fa-solid fa-database"></i>
+                                            </div>
+                                            <span><?= explode(':', $translations['code_skills'])[8] ?></span>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

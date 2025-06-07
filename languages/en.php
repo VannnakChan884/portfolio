@@ -12,9 +12,9 @@ return [
     'current_job' => 'IT Support at Hand7 Garment CO.,LTD',
     
     'skills_title' => 'SKILLS',
-    'design_skills' => 'Design: Adobe Photoshop | Adobe Illustrator | Figma',
-    'it_skills' => 'IT Support: CCTV Installation',
-    'code_skills' => 'Coding: HTML/CSS/TailwindCSS | JavaScript/Vue.js | PHP/Laravel | MySQL',
+    'design_skills' => 'Design Tools: Adobe Photoshop: Adobe Illustrator: Figma: SketUp',
+    'it_skills' => 'IT Support: CCTV Installation: Printer Configuration: Network Troubleshooting: Support Users',
+    'code_skills' => 'Web Development: HTML: CSS: Tailwind CSS: JavaScript: Vue.js: PHP: Laravel: MySQL',
     
     'projects_title' => 'PROJECTS',
     

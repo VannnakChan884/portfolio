@@ -12,18 +12,9 @@ return [
     'current_job' => 'IT Support នៅរោងចក្រ Hand7 Garment CO.,LTD',
     
     'skills_title' => 'ជំនាញ',
-    'design_skills' => 'ការរចនា: Photoshop | Illustrator | Figma',
-    'it_skills' => 'IT Support: CCTV | ការដំឡើងបណ្តាញ | ការកំណត់រចនាសម្ព័ន្ធម៉ាស៊ីនបោះពុម្ព',
-    'code_skills' => 'កូដ: HTML/CSS/TailwindCSS | JavaScript/Vue.js | PHP/Laravel | MySQL',
-
-    'education' => 'SETEC Institute - MIS',
-    'experience' => 'អតីតអ្នករចនា @ Reach Both Graphic - អ្នកគាំទ្របច្ចេកវិទ្យា',
-    'about_content' => 'ខ្ញុំចូលចិត្តបច្ចេកវិទ្យា និងការរចនាជាមួយនឹងបទពិសោធន៍ក្នុងវិស័យទាំងពីរ។ ខ្ញុំឯកទេសក្នុងការបង្កើតការរចនាដែលមានភាពស្រស់ស្អាត ខណៈពេលដែលថែរក្សាហ្វ្រាំវ៉ាបច្ចេកវិទ្យាដ៏មាំមួន។',
-    
-    'skills_title' => 'ជំនាញ',
-    'design_skills' => 'ការរចនា: Photoshop | Illustrator | Figma',
-    'it_skills' => 'អ៊ីធី: CCTV | ការដំឡើងបណ្តាញ | ការកំណត់រចនាសម្ព័ន្ធម៉ាស៊ីនបោះពុម្ព',
-    'code_skills' => 'កូដ: HTML/CSS | JavaScript | PHP | MySQL',
+    'design_skills' => 'ឧបករណ៍រចនា: Adobe Photoshop: Adobe Illustrator: Figma: SketUp',
+    'it_skills' => 'គាំទ្របច្ចេកវិទ្យា: ដំឡើងកាមេរ៉ាសុវត្ថិភាព: Config ម៉ាស៊ីនព្រីន: ការដោះស្រាយបញ្ហាបណ្តាញ: Support អ្នកប្រើប្រាស់',
+    'code_skills' => 'អភិវឌ្ឍន៍គេហទំព័រ: HTML: CSS: Tailwind CSS: JavaScript: Vue.js: PHP: Laravel: MySQL',
     
     'projects_title' => 'គម្រោង',
     
@@ -33,6 +24,6 @@ return [
     'message' => 'សារ',
     'submit' => 'ដាក់ស្នើ',
     
-    'copyright' => '© ២០២៥ វណ្ណៈ។ រក្សាសិទ្ធិគ្រប់យ៉ាង។'
+    'រក្សាសិទ្ធិ' => '© ២០២៥ វណ្ណៈ។ រក្សាសិទ្ធិគ្រប់យ៉ាង។'
 ];
 ?>

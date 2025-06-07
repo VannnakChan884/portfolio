@@ -17,12 +17,9 @@ return [
 
     
     'skills_title' => '技能',
-    'design_skills' => '设计: Photoshop | Illustrator | Figma',
-    'it_skills' => 'IT: 监控系统 | 网络设置 | 打印机配置',
-
-    'code_skills' => '编程: HTML/CSS/TailwindCSS | JavaScript/Vue.js | PHP/Laravel | MySQL',
-
-    'code_skills' => '编程: HTML/CSS | JavaScript | PHP | MySQL',
+    'design_skills' => '设计工具: Adobe Photoshop: Adobe Illustrator: Figma: SketUp',
+    'it_skills' => 'IT支持: 闭路电视安装: 打印机配置: 网络故障排除: 支持用户',
+    'code_skills' => 'Web 开发: HTML: CSS: Tailwind CSS: JavaScript: Vue.js: PHP: Laravel: MySQL',
 
     
     'projects_title' => '项目',
