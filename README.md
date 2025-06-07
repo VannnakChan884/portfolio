@@ -1,4 +1,5 @@
 Deployment Instructions
+
     1. Requirements:
         - Web server (Apache/Nginx)
         - PHP 7.4+
@@ -21,10 +22,20 @@ Deployment Instructions
         - Consider adding caching headers for static assets
 
 Features Implemented
-    1. Responsive Design: Works on all device sizes
-    2. Dark/Light Mode: Toggle with persistent preference
-    3. Multi-language Support: English, Khmer, and Chinese
-    4. Dynamic Content: Projects loaded from database
-    5. Interactive Contact Form: With validation
-    6. Smooth Animations: For better user experience
-    7. Accessibility: Proper contrast and semantic HTML
+
+    1. Responsive Design: 
+       - Works on all device sizes
+    2. Dark/Light Mode:
+       - Toggle with persistent preference
+    3. Multi-language Support: 
+       - English
+       - Khmer
+       - Chinese
+    4. Dynamic Content:
+       - Projects loaded from database
+    5. Interactive Contact Form:
+       - With validation
+    6. Smooth Animations:
+       - For better user experience
+    7. Accessibility:
+       - Proper contrast and semantic HTML
