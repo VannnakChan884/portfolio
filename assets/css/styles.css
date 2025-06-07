@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sawarabi+Mincho&display=swap');
 
 /* Smooth transitions */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Nunito Sans', 'Kantumruy Pro', 'Sawarabi Mincho', sans-serif;
-    scroll-behavior: smooth;
 }
 
 .hero-pattern {
