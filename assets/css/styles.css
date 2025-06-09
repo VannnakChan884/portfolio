@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sawarabi+Mincho&display=swap');
 
+/* Add these styles for PDF generation */
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+        color: #000;
+        background: #fff;
+        font-size: 12pt;
+    }
+    
+    .no-print {
+        display: none !important;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .page-break {
+        page-break-after: always;
+    }
+    
+    /* Resume specific styles */
+    .resume-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    h1, h2, h3, h4 {
+        color: #2C5282 !important;
+    }
+}
+
 /* Smooth transitions */
 html {
     scroll-behavior: smooth;
@@ -103,20 +139,3 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-@media print {
-    body {
-        padding: 20px;
-        color: #000;
-        background: #fff;
-    }
-    .no-print {
-        display: none !important;
-    }
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-    .page-break {
-        page-break-after: always;
-    }
-}
