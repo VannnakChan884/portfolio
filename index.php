@@ -69,6 +69,13 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
                         <a href="#projects" class="bg-primary dark:bg-gray-600 hover:bg-gray-900 dark:hover:bg-primary text-secondary font-medium px-8 py-3 rounded-lg btn inline-block">
                             <?= $translations['view_work'] ?>
                         </a>
+                        <!-- Add this to your contact section or navigation -->
+                        <button id="downloadResume" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            Resume
+                        </button>
                     </div>
                 </div>
             </div>
@@ -361,6 +368,9 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
     </div>
 
     <?php include 'includes/footer.php'; ?>
+
+    <!-- Add this before your main.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
     <script src="assets/js/main.js"></script>
 </body>
