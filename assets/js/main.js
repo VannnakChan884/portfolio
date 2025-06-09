@@ -86,73 +86,120 @@ const app = Vue.createApp({
             
             // Resume HTML template
             resumeContent.innerHTML = `
-                <style>
-                    body { font-family: Arial, sans-serif; line-height: 1.6; }
-                    h1 { color: #3182CE; font-size: 24pt; margin-bottom: 5px; }
-                    h2 { color: #2C5282; font-size: 18pt; margin-bottom: 15px; }
-                    h3 { color: #3182CE; border-bottom: 1px solid #3182CE; padding-bottom: 3px; margin-top: 20px; }
-                    .section { margin-bottom: 20px; }
-                    .contact-info { margin-bottom: 25px; text-align: center; }
-                    .skills-list { columns: 2; margin-top: 10px; }
-                    .experience-item { margin-bottom: 12px; }
-                    .project-item { margin-bottom: 12px; }
-                </style>
-                
-                <div class="header">
-                    <h1 class="text-center">${this.translations.hero_title}</h1>
-                    <h2 class="text-center">${this.translations.hero_subtitle}</h2>
-                    <div class="contact-info">
-                        <p>Email: your.email@example.com | Phone: (123) 456-7890</p>
+                <!-- Hero Section -->
+                <div class="section grid grid-cols-2 gap-4">
+                    <img src="assets/images/avatar.png" alt="Vannak's Profile Photo">
+                    <div class="grid grid-flow-col grid-rows-4 gap-4">
+                        <h1 class="text-4xl font-bold text-primary mb-2">${this.translations.hero_title}</h1>
+                        <h2 class="text-xl text-primary mb-6 font-medium">${this.translations.hero_subtitle}</h2>
+                        <p class="text-primary mb-8 mx-auto font-light">Bridging technology and creativity to deliver seamless digital experiences and robust IT solutions.</p>
+                        <p>Email: vannakchan884@gmail.com<br>Phone: (+855) 96 26 65 240</p>
                     </div>
                 </div>
-                
+
+                <!-- About Section -->
                 <div class="section">
-                    <h3>${this.translations.about_title}</h3>
-                    <div class="experience-item">
-                        <p><strong>${this.translations.education}</strong></p>
-                        <p>Bachelor's Degree in Management Information Systems</p>
+                    <h2>${this.translations.about_title}</h2>
+                    <!-- Education & Career -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold  mb-4">Education & Career</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-graduation-cap mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">${this.translations.education}</h4>
+                                    <p class="font-light">Bachelor's Degree in Management Information Systems</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-briefcase mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">${this.translations.experience_one}</h4>
+                                    <p class="font-light">Provide design services for posters, logos, stickers, packaging... to customers.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-briefcase mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">${this.translations.experience_two}</h4>
+                                    <p class="font-light">Created posters for promoting products on social media.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-server mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">${this.translations.experience_three}</h4>
+                                    <p class="font-light">Providing technical assistance and network solutions.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-server mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-medium">${this.translations.current_job}</h4>
+                                    <p class="font-light">Providing technical assistance and network solutions.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="experience-item">
-                        <p><strong>${this.translations.experience_one}</strong></p>
-                        <p>Provide design services for posters, logos, stickers, packaging</p>
-                    </div>
-                    <div class="experience-item">
-                        <p><strong>${this.translations.experience_two}</strong></p>
-                        <p>Created posters for promoting products on social media</p>
-                    </div>
-                    <div class="experience-item">
-                        <p><strong>${this.translations.experience_three}</strong></p>
-                        <p>Providing technical assistance and network solutions</p>
-                    </div>
-                    <div class="experience-item">
-                        <p><strong>${this.translations.current_job}</strong></p>
-                        <p>Providing technical assistance and network solutions</p>
+
+                    <!-- My Journey -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary mb-4">My Journey</h3>
+                        <p class="text-primagry mb-4">
+                            With a background in both design and information systems, I've cultivated a unique skill set that allows me to bridge the gap between technical functionality and aesthetic appeal.
+                            <br><br>My journey began in graphic design, where I developed a keen eye for visual communication. This foundation led me to explore the technical side of digital experiences, eventually specializing in IT support and web development.
+                            <br><br>Today, I combine these skills to create solutions that are not only technically sound but also visually compelling and user-friendly.
+                        </p>
                     </div>
                 </div>
-                
+
+                <!-- Skills Section -->
                 <div class="section">
                     <h3>${this.translations.skills_title}</h3>
-                    <div class="skills-list">
-                        <p><strong>${this.translations.design_skills.split(':')[0]}:</strong> ${this.translations.design_skills.split(':')[1]}</p>
-                        <p><strong>${this.translations.it_skills.split(':')[0]}:</strong> ${this.translations.it_skills.split(':')[1]}</p>
-                        <p><strong>${this.translations.code_skills.split(':')[0]}:</strong> ${this.translations.code_skills.split(':')[1]}</p>
-                    </div>
-                </div>
-                
-                <div class="section">
-                    <h3>${this.translations.projects_title}</h3>
-                    ${this.projects.map(project => `
-                        <div class="project-item">
-                            <p><strong>${project.title}</strong></p>
-                            <p>${project.description}</p>
+                    <div>
+                        <!-- Design Skills -->
+                        <div>
+                            <h4 class="font-bold">${this.translations.design_skills.split(':')[0]}</h4>
+                            <p>
+                                ${this.translations.design_skills.split(':')[1]} | 
+                                ${this.translations.design_skills.split(':')[2]} | 
+                                ${this.translations.design_skills.split(':')[3]} | 
+                                ${this.translations.design_skills.split(':')[4]}
+                            </p>
                         </div>
-                    `).join('')}
+
+                        <!-- IT Skills -->
+                        <div>
+                            <h4 class="font-bold">${this.translations.it_skills.split(':')[0]}</h4>
+                            <p>
+                                ${this.translations.it_skills.split(':')[1]} | 
+                                ${this.translations.it_skills.split(':')[2]} | 
+                                ${this.translations.it_skills.split(':')[3]} | 
+                                ${this.translations.it_skills.split(':')[4]}
+                            </p>
+                        </div>
+
+                        <!-- Coding Skills -->
+                        <div>
+                            <h4 class="font-bold">${this.translations.code_skills.split(':')[0]}</h4>
+                            <p>
+                                ${this.translations.code_skills.split(':')[1]} | 
+                                ${this.translations.code_skills.split(':')[2]} | 
+                                ${this.translations.code_skills.split(':')[3]} | 
+                                ${this.translations.code_skills.split(':')[4]} | 
+                                ${this.translations.code_skills.split(':')[5]} | 
+                                ${this.translations.code_skills.split(':')[6]} | 
+                                ${this.translations.code_skills.split(':')[7]} | 
+                                ${this.translations.code_skills.split(':')[8]}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             `;
 
             // PDF generation options
             const options = {
-                margin: 10,
+                margin: 8,
                 filename: `${this.translations.hero_title}_Resume.pdf`,
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { 
@@ -188,29 +235,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
             });
+
+            // Close mobile menu if open
+            if (headerApp.mobileMenuOpen) {
+                headerApp.mobileMenuOpen = false;
+            }
         }
     });
 });
-
-// Smooth scrolling for anchor links
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-        
-//         const targetId = this.getAttribute('href');
-//         if (targetId === '#') return;
-        
-//         const targetElement = document.querySelector(targetId);
-//         if (targetElement) {
-//             window.scrollTo({
-//                 top: targetElement.offsetTop - 80,
-//                 behavior: 'smooth'
-//             });
-            
-//             // Close mobile menu if open
-//             if (headerApp.mobileMenuOpen) {
-//                 headerApp.mobileMenuOpen = false;
-//             }
-//         }
-//     });
-// });

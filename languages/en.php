@@ -1,6 +1,6 @@
 <?php
 return [
-    'hero_title' => 'VANNAK',
+    'hero_title' => 'CHAN VANNAK',
     'hero_subtitle' => 'IT Support & Graphic Designer',
     'view_work' => 'View My Work',
     
