@@ -102,3 +102,21 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
+
+@media print {
+    body {
+        padding: 20px;
+        color: #000;
+        background: #fff;
+    }
+    .no-print {
+        display: none !important;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    .page-break {
+        page-break-after: always;
+    }
+}

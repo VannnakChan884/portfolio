@@ -66,16 +66,18 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
                         <p class="text-primary dark:text-gray-500 mb-8 max-w-lg mx-auto md:mx-0 font-light">
                             Bridging technology and creativity to deliver seamless digital experiences and robust IT solutions.
                         </p>
-                        <a href="#projects" class="bg-primary dark:bg-gray-600 hover:bg-gray-900 dark:hover:bg-primary text-secondary font-medium px-8 py-3 rounded-lg btn inline-block">
-                            <?= $translations['view_work'] ?>
-                        </a>
-                        <!-- Add this to your contact section or navigation -->
-                        <button id="downloadResume" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                            </svg>
-                            Resume
-                        </button>
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                            <a href="#projects" class="bg-primary dark:bg-gray-600 hover:bg-gray-900 dark:hover:bg-primary text-secondary font-medium text-center p-3 rounded-lg btn inline-block">
+                                <?= $translations['view_work'] ?>
+                            </a>
+                            <!-- Add this to your contact section or navigation -->
+                            <button id="downloadResume" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                                </svg>
+                                Resume
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -371,6 +373,11 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
 
     <!-- Add this before your main.js script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        // Pass PHP translations to JavaScript
+        window.portfolioTranslations = <?= json_encode($translations) ?>;
+    </script>
 
     <script src="assets/js/main.js"></script>
 </body>
