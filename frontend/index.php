@@ -343,8 +343,20 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
         <section id="contact" class="py-16 bg-gray-50">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-primary dark:text-gray-800 text-center mb-12"><?= $translations['contact_title'] ?></h2>
-                <div class="bg-secondary dark:bg-gray-800 p-8 rounded-lg shadow-md">
-                    <form @submit.prevent="submitForm" class="text-primary dark:text-secondary space-y-6">
+                <div class="bg-secondary dark:bg-gray-800 p-8 rounded-lg shadow-md"> 
+                <?php if (isset($_SESSION['error'])): ?>
+                    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded mb-4">
+                        <?= $_SESSION['error'] ?>
+                    </div>
+                    <?php unset($_SESSION['error']); ?>
+                <?php endif; ?>
+                <?php if (isset($_SESSION['success'])): ?>
+                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-2 rounded mb-4">
+                    <?= $_SESSION['success'] ?>
+                </div>
+                <?php unset($_SESSION['success']); ?>
+                <?php endif; ?>
+                <form action="../admin/messages/contact_process.php" method="POST" class="text-primary dark:text-secondary space-y-6">
                         <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                             <div class="sm:col-span-3">
                                 <label for="name" class="block text-sm font-medium mb-1"><?= $translations['name'] ?></label>

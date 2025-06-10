@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-require '../config/db.php';
+require '../../admin/includes/db.php';
 
 try {
     $stmt = $pdo->query("SELECT * FROM projects ORDER BY created_at DESC");
