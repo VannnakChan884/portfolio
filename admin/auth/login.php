@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Admin Login</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="flex items-center justify-center h-screen bg-gray-100">
   <form action="login_process.php" method="POST" class="bg-white p-6 rounded shadow-md w-full max-w-sm">
