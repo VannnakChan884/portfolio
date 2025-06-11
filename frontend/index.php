@@ -323,14 +323,14 @@ $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div v-for="project in projects" :key="project.id" class="project-card bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-md">
                         <div class="h-48 overflow-hidden">
-                            <img :src="project.image_url" :alt="project.title" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                            <img :src="project.image" :alt="project.title" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-4">
                             <h3 class="text-lg font-semibold text-primary dark:text-secondary mb-2">{{ project.title }}</h3>
                             <p class="text-primary text-sm dark:text-secondary mb-3">{{ project.description }}</p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="bg-primary text-secondary text-xs px-2 py-1 rounded dark:bg-gray-900 dark:text-secondary">
-                                    {{ project.category }}
+                                    {{ project.created_at }}
                                 </span>
                             </div>
                         </div>

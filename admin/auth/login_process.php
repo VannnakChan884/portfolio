@@ -16,7 +16,7 @@ if ($user = $result->fetch_assoc()) {
     if (password_verify($password, $user['password'])) {
         $_SESSION['admin_logged_in'] = true;
         $_SESSION['admin_username'] = $user['username'];
-        header('Location: ../dashboard.php');
+        header('Location: ../');
         exit();
     } else {
         $_SESSION['error'] = 'Incorrect password.';
